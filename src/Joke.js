@@ -1,16 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useFetch } from './hooks';
 
 const Joke = () => {
-    const [joke, setJoke] = useState({});
-
-    useEffect(() => {
-        fetch('https://v2.jokeapi.dev/joke/Any')
-            .then((response) => response.json())
-            .then((joke) => setJoke(joke))
-            .catch((err) => new Error(err));
-    }, []);
-
-    const { setup, delivery } = joke;
+    const { setup, delivery } = useFetch('https://v2.jokeapi.dev/joke/Any', {});
 
     return (
         <>

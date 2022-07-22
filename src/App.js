@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 import Joke from './Joke';
+import Tasks from './Tasks';
+import Stories from './Stories';
 
 import './index.css';
 
@@ -34,6 +36,9 @@ const App = () => {
             </div>
             <hr />
             <Joke />
+            <hr />
+            {/* <Stories /> */}
+            <Tasks />
         </div>
     );
 }
