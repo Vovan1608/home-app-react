@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Joke from './Joke';
 import Tasks from './Tasks';
 import Stories from './Stories';
+import Matrix from './Matrix';
 
 import './index.css';
 
@@ -26,7 +27,7 @@ const App = () => {
     return (
         <div className="App">
             <h1>Hello</h1>
-            <div className='form'>
+            {/* <div className='form'>
                 <input
                     value={userQuery}
                     onKeyDown={handleKeyDown}
@@ -36,9 +37,10 @@ const App = () => {
             </div>
             <hr />
             <Joke />
-            <hr />
+            <hr /> */}
             {/* <Stories /> */}
-            <Tasks />
+            {/* <Tasks /> */}
+            <Matrix />
         </div>
     );
 }
